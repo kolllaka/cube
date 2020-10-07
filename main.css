@@ -1,0 +1,61 @@
+body {
+    background: url(./extra_clean_paper.webp);
+    font: 1em 'PT Sans', Tahoma, Arial;
+}
+
+
+#wrapper {
+    perspective: 900px;
+    margin: 80px;
+}
+
+#cube {
+    height: 300px;
+    position: relative;
+    width: 300px;
+
+    transform-origin: 50% 50% -150px;
+    transform-style: preserve-3d;
+    /*   transform: rotate3d(1, 1, 1, 30deg);*/
+
+}
+
+.side {
+    background: rgba(0, 0, 0, .3);
+    background: -webkit-radial-gradient(rgba(0, 0, 0, .1),
+        rgba(0, 0, 0, .5));
+    border-radius: 10px;
+    border: 10px solid #000;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 5em;
+    height: 300px;
+    line-height: 300px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    width: 300px;
+
+    transform-origin: 50% 50% -150px;
+    /*backface-visibility: hidden;*/
+}
+
+#side2 {
+    transform: rotateY(90deg);
+}
+
+#side3 {
+    transform: rotateY(-90deg);
+}
+
+#side4 {
+    transform: rotateX(90deg);
+}
+
+#side5 {
+    transform: rotateX(-90deg);
+}
+
+#side6 {
+    transform: rotateY(180deg);
+}
